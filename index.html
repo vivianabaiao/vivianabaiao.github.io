@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Viviana Baião</title>
+    <script src="js/myscript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Viviana Baião</h1>
+            <nav>
+                <div class="nav-links">
+                    <a href="#about">Sobre Mim</a>
+                    <a href="#skills">Competências</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Sou resiliente, criativa e apaixonada por cartografia. Tenho experiência em Sistemas de Informação Geográfica, detecção remota e trabalho com ferramentas como ArcGIS e QGIS. Busco sempre melhorar minhas habilidades e contribuir para projetos significativos.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Competências</h2>
+            <div class="skill-items" style="display: flex; justify-content: center; align-items: center; gap: 30px; margin: 20px auto; text-align: center; width: 100%; max-width: 600px;"></div>
+                <img src="https://i0.wp.com/blog.qgis.org/wp-content/uploads/2016/12/qgis-icon_anita02.png?w=241&h=221&ssl=1" alt="QGIS" style="width: 60px; height: 60px;">
+                <img src="https://www.esri.com/content/dam/esrisites/en-us/common/icons/product-logos/ArcGIS-Pro.png" alt="ArcGIS" style="width: 60px; height: 60px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 60px; height: 60px;">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Reestruturação Territorial - Diocese de Setúbal</h3>
+                <p>Participação no estudo e proposta de novo mapa territorial das paróquias e vigararias.</p>
+            </div>
+            <div class="project">
+                <h3>Projetos Acadêmicos</h3>
+                <p>Trabalhos em SIG e cartografia desenvolvidos no mestrado em Ciências do Mar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Contatos</h2>
+           
+            <div class="contact-icons" style="text-align: center;">
+                <a href="mailto:vivianamurilhasb@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/viviana-baiao" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="tel:+351968498231" aria-label="Phone">
+                    <i class="fas fa-phone fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Viviana Baião. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

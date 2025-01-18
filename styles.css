@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    margin: 0 5px;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #fbfdff;
+    margin: 30px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    color: #4682b4;
+    margin: 25px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #87cfeb00; /* SkyBlue */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+button {
+    background-color: #4682b4; /* SteelBlue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #5a9bd4; /* Lighter SteelBlue */
+}
+.social-icons {
+    margin: 25px 0;  /* Match h2 margin */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;  /* Match h2 letter-spacing */
+}
+
+.social-icons a {
+    color: #4682b4;
+    font-size: 36px;  /* Increased from 24px */
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon {
+    color: #4682b4;
+    font-size: 36px;  /* Increased from 24px */
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 25px auto; /* Changed from '25px 0' to '25px auto' */
+    gap: 20px; /* Adds consistent spacing between images */
+    max-width: 1000px; /* Limits the container width */
+    padding: 0 15px; /* Adds some padding on the sides */
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0; /* Removed margin since we're using gap */
+}
