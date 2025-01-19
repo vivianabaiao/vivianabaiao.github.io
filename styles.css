@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f7fa;
@@ -10,28 +11,56 @@ body {
     flex-direction: column;
 }
 
-h1 {
-    text-align: center;
-    color: #fbfdff;
-    margin: 30px 0;
-    font-size: 2.5em;
+/* Typography */
+h1, h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
+}
+
+h1 {
+    color: #fbfdff;
+    font-size: 2.5em;
+    margin: 30px 0;
 }
 
 h2 {
-    text-align: center;
     color: #4682b4;
-    margin: 25px 0;
     font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin: 25px 0;
 }
 
+/* Layout components */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+header, footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+footer {
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+nav {
+    background-color: #87cfeb00;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
 }
 
 section {
@@ -42,19 +71,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    background-color: #4682b4; /* SteelBlue */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #87cfeb00; /* SkyBlue */
-    padding: 10px;
-    text-align: center;
-}
-
+/* Navigation */
 nav a {
     color: white;
     margin: 0 15px;
@@ -66,72 +83,35 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #4682b4; /* SteelBlue */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    margin-top: auto;
-}
-
+/* Buttons */
 button {
-    background-color: #4682b4; /* SteelBlue */
+    background-color: #4682b4;
     color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #5a9bd4; /* Lighter SteelBlue */
+    background-color: #5a9bd4;
 }
+
+/* Social Icons */
 .social-icons {
-    margin: 25px 0;  /* Match h2 margin */
+    margin: 25px 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 2px;  /* Match h2 letter-spacing */
+    letter-spacing: 2px;
 }
 
-.social-icons a {
+.social-icons a, .icon {
     color: #4682b4;
-    font-size: 36px;  /* Increased from 24px */
-    margin: 0 10px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-
-.icon {
-    color: #4682b4;
-    font-size: 36px;  /* Increased from 24px */
+    font-size: 36px;
     margin: 0 10px;
     display: inline-block;
     text-align: center;
 }
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 25px auto; /* Changed from '25px 0' to '25px auto' */
-    gap: 20px; /* Adds consistent spacing between images */
-    max-width: 1000px; /* Limits the container width */
-    padding: 0 15px; /* Adds some padding on the sides */
-}
 
-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 0; /* Removed margin since we're using gap */
-}
