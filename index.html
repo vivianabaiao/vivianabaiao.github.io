@@ -29,7 +29,10 @@
     <section id="about" class="section">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Sou resiliente, criativa e apaixonada por cartografia. Tenho experiência em Sistemas de Informação Geográfica, detecção remota e trabalho com ferramentas como ArcGIS e QGIS. Busco sempre melhorar minhas habilidades e contribuir para projetos significativos.</p>
+            <div style="display: flex; align-items: start; gap: 30px; margin-top: 20px;">
+                <img src="https://www.spatialnode.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fspatialnodefiles%2Fprofiles%2F3b40dd70-7e80-40a3-9e55-d9569525b0c1%2Fvivianabaiao_avatar.jpg&w=384&q=70" alt="Viviana Baião" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+                <p>Licenciada em Geografia e Mestre em Ciências do Mar. Sou resiliente, criativa e apaixonada por cartografia. Tenho experiência em Sistemas de Informação Geográfica, detecção remota e trabalho com ferramentas como ArcGIS e QGIS. Procuro sempre melhorar as minhas habilidades e contribuir para projetos significativos. Tenho um gosto por aprender e gosto sempre de novos desafios.</p>
+            </div>
         </div>
     </section>
 
@@ -47,15 +50,115 @@
     <section id="projects" class="section">
         <div class="container">
             <h2>Projetos</h2>
-            <div class="project">
-                <h3>Reestruturação Territorial - Diocese de Setúbal</h3>
-                <p>Participação no estudo e proposta de novo mapa territorial das paróquias e vigararias.</p>
-            </div>
-            <div class="project">
-                <h3>Projetos Académicos</h3>
-                <p>Trabalhos em SIG e cartografia desenvolvidos no mestrado em Ciências do Mar.</p>
-            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/project1.jpg" alt="Diocese de Setúbal - Mapa">
+                    <div class="gallery-caption">Reestruturação Territorial - Diocese de Setúbal</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/project2.jpg" alt="Projeto SIG">
+                    <div class="gallery-caption">Análise Espacial - SIG</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.spatialnode.net/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fspatialnodefiles%2Fprojects%2F9fab2aa4-e196-4b9f-adfc-d51431b73557%2FSolo_Sorraia.jpg&w=1920&q=100" 
+                    alt="Cartografia" 
+                    onclick="openModal(this.src)"
+                    class="gallery-image">
+                    <div class="gallery-caption">Mapa de solos da bacia hidrográfica do Rio Sorraia- Produzida em contexto da dissertação de mestrado</div>
+                </div>
+
+        <!-- Modal para a imagem -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-content">
         </div>
+
+        <style>
+        .gallery-caption {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+        }
+
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 10px;
+            color: #f1f1f1;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .gallery-image {
+            cursor: pointer;
+        }
+        </style>
+
+        <script>
+        function openModal(imgSrc) {
+            document.getElementById('imageModal').style.display = "flex";
+            document.getElementById('modalImage').src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+        </script>
+    </div>
+
+    <style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .gallery-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
     </section>
 
     <section id="contact" class="section">
